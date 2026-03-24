@@ -1,0 +1,155 @@
+﻿@page "/employees/list"
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<PageTitle>รายชื่อพนักงาน</PageTitle>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h3 class="fw-bold">รายชื่อพนักงานทั้งหมด (@FilteredEmployees.Count)</h3>
+    <div class="d-flex gap-2">
+        <div class="input-group" style="width: 300px;">
+            <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" class="form-control" placeholder="ค้นหาชื่อ หรือ แผนก..."
+                   @bind="SearchTerm" @bind:event="oninput" @onkeyup="ResetPage" />
+        </div>
+        <a href="employees" class="btn btn-secondary">
+            <i class="fa-solid fa-arrow-left me-1"></i> กลับ
+        </a>
+    </div>
+</div>
+
+@if (employees == null)
+{
+    <div class="text-center p-5"><div class="spinner-border text-primary"></div></div>
+
+}
+else
+{
+    <table class="table table-hover align-middle border">
+        <thead class="table-light">
+            <tr>
+                <th>#</th>
+                <th>รูป</th>
+                <th>ชื่อ-นามสกุล</th>
+                <th>แผนก</th>
+                <th>วันที่เริ่มงาน</th>
+                <th class="text-center">จัดการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int index = (CurrentPage - 1) * PageSize + 1;
+            }
+            @foreach (var emp in PagedEmployees)
+            {
+                <tr>
+                    <td>@(index++)</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(emp.Photo))
+                        {
+                            <img src="@(ImageBaseUrl + emp.Photo)" class="rounded-circle" style="width: 45px; height: 45px; object-fit: cover; border: 1px solid #ddd;" />
+                        }
+                        else
+                        {
+                            <div class="rounded-circle bg-light d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+                                <i class="fa-solid fa-user text-secondary"></i>
+                            </div>
+                        }
+                    </td>
+                    <td class="fw-bold">@emp.Employee_First_name @emp.Employee_Last_name</td>
+                    <td><span class="badge bg-info text-dark">@(emp.Department?.Department_Name ?? "N/A")</span></td>
+                    <td>@emp.Date_Joined?.ToString("dd/MM/yyyy")</td>
+                    <td class="text-center">
+                        <a href="@($"/employee/edit/{emp.Employee_ID}")" class="btn btn-warning btn-sm shadow-sm">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <button class="btn btn-danger btn-sm shadow-sm" @onclick="@(() => DeleteEmployee(emp.Employee_ID))">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <div>
+            แสดงหน้า @CurrentPage จาก @TotalPages หน้า
+        </div>
+        <nav>
+            <ul class="pagination mb-0">
+                <li class="page-item @(CurrentPage == 1 ? "disabled" : "")">
+                    <button class="page-link" @onclick="() => ChangePage(CurrentPage - 1)">Previous</button>
+                </li>
+                @for (int i = 1; i <= TotalPages; i++)
+                {
+                    var pageNumber = i;
+                    <li class="page-item @(CurrentPage == pageNumber ? "active" : "")">
+                        <button class="page-link" @onclick="() => ChangePage(pageNumber)">@pageNumber</button>
+                    </li>
+                }
+                <li class="page-item @(CurrentPage == TotalPages ? "disabled" : "")">
+                    <button class="page-link" @onclick="() => ChangePage(CurrentPage + 1)">Next</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+}
+
+@code {
+    private List<Employee>? employees;
+    private string ImageBaseUrl = "http://localhost:5250/uploads/";
+    private string SearchTerm = "";
+    private int CurrentPage = 1;
+    private int PageSize = 10;
+
+    private List<Employee> FilteredEmployees => employees?
+        .Where(e => string.IsNullOrWhiteSpace(SearchTerm) ||
+                    (e.Employee_First_name + " " + e.Employee_Last_name).Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    (e.Department?.Department_Name ?? "").Contains(SearchTerm, StringComparison.OrdinalIgnoreCase))
+        .ToList() ?? new List<Employee>();
+
+    private IEnumerable<Employee> PagedEmployees => FilteredEmployees
+        .Skip((CurrentPage - 1) * PageSize)
+        .Take(PageSize);
+
+    private int TotalPages => (int)Math.Ceiling((double)FilteredEmployees.Count / PageSize);
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            employees = await Http.GetFromJsonAsync<List<Employee>>("api/Employees");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private void ChangePage(int page)
+    {
+        if (page >= 1 && page <= TotalPages) CurrentPage = page;
+    }
+
+    private void ResetPage() => CurrentPage = 1;
+
+    private async Task DeleteEmployee(int id)
+    {
+        var confirmed = await JS.InvokeAsync<bool>("confirm", "ยืนยันการลบพนักงาน?");
+        if (confirmed)
+        {
+            var response = await Http.DeleteAsync($"api/Employees/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                await JS.InvokeVoidAsync("showToast", "ลบสำเร็จ!");
+                await LoadData();
+            }
+        }
+    }
+}

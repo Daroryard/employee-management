@@ -1,0 +1,559 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\project\\git\\employee-management\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\EditEmployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\migrations\\20260324152303_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\migrations\\20260324152303_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\migrations\\20260324154316_uptodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\migrations\\20260324154316_uptodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|c:\\project\\git\\employee-management\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E93FFB9-042D-4912-A42B-CE5EA6F4275B}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\EmployeeList.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\EmployeeManagement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\Home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\EditDepartment.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\DepartmentManagement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\DepartmentList.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\AddEmployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\Weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Pages\\Counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Layout\\NavMenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Layout\\MainLayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\EmployeeManagement.Shared\\Employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\EmployeeManagement.Shared\\Department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\App.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\_Imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\EmployeeManagement.Shared\\EmployeeManagement.Shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\project\\mini_test\\Frontend\\Frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditEmployee.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\EditEmployee.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\EditEmployee.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\EditEmployee.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\EditEmployee.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAGQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T08:38:01.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmployeeList.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\EmployeeList.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\EmployeeList.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\EmployeeList.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\EmployeeList.razor",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAH0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T03:30:56.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmployeeManagement.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\EmployeeManagement.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\EmployeeManagement.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\EmployeeManagement.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\EmployeeManagement.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T05:27:04.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\Home.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\Home.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T04:12:29.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EditDepartment.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\EditDepartment.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\EditDepartment.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\EditDepartment.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\EditDepartment.razor",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAB0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T09:18:49.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DepartmentManagement.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\DepartmentManagement.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\DepartmentManagement.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\DepartmentManagement.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\DepartmentManagement.razor",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACEAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T09:17:53.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DepartmentList.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\DepartmentList.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\DepartmentList.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\DepartmentList.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\DepartmentList.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T09:18:10.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AddEmployee.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\AddEmployee.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\AddEmployee.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\AddEmployee.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\AddEmployee.razor",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAABAAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T05:50:14.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\Weather.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\Weather.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\Weather.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T04:12:42.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T05:53:16.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260324152303_Init.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Migrations\\20260324152303_Init.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\20260324152303_Init.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Migrations\\20260324152303_Init.cs",
+              "RelativeToolTip": "Backend\\Migrations\\20260324152303_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T15:23:24.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-24T14:33:28.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-22T06:02:05.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Pages\\Counter.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Pages\\Counter.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T14:17:24.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T04:21:07.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T04:54:19.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20260324154316_UptoDb.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Migrations\\20260324154316_UptoDb.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\20260324154316_UptoDb.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Migrations\\20260324154316_UptoDb.cs",
+              "RelativeToolTip": "Backend\\Migrations\\20260324154316_UptoDb.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T15:43:18.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T15:23:26.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\project\\mini_test\\EmployeeManagement.Shared\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\EmployeeManagement.Shared\\Employee.cs",
+              "ToolTip": "C:\\project\\mini_test\\EmployeeManagement.Shared\\Employee.cs",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\EmployeeManagement.Shared\\Employee.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:32:02.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Backend\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:19:57.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\project\\mini_test\\EmployeeManagement.Shared\\Department.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\EmployeeManagement.Shared\\Department.cs",
+              "ToolTip": "C:\\project\\mini_test\\EmployeeManagement.Shared\\Department.cs",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\EmployeeManagement.Shared\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:32:49.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Program.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Program.cs",
+              "RelativeToolTip": "Backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T15:49:27.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAcwAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:56:52.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Program.cs",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T03:29:12.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\App.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\App.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\App.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T04:12:57.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\_Imports.razor",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\_Imports.razor",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\_Imports.razor",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-22T03:30:07.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T04:50:47.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-22T05:27:24.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EmployeeManagement.Shared.csproj",
+              "DocumentMoniker": "C:\\project\\mini_test\\EmployeeManagement.Shared\\EmployeeManagement.Shared.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\EmployeeManagement.Shared\\EmployeeManagement.Shared.csproj",
+              "ToolTip": "C:\\project\\mini_test\\EmployeeManagement.Shared\\EmployeeManagement.Shared.csproj",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\EmployeeManagement.Shared\\EmployeeManagement.Shared.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-21T16:52:03.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Backend\\WeatherForecast.cs",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\WeatherForecast.cs",
+              "RelativeToolTip": "Backend\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T04:43:26.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Backend.http",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Backend.http",
+              "RelativeDocumentMoniker": "Backend\\Backend.http",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Backend.http",
+              "RelativeToolTip": "Backend\\Backend.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-21T15:49:17.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend\\appsettings.json",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\appsettings.json",
+              "RelativeToolTip": "Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-21T15:52:43.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\wwwroot\\index.html",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\wwwroot\\index.html",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\wwwroot\\index.html",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwCIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-03-22T05:19:12.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Frontend.csproj",
+              "DocumentMoniker": "C:\\project\\mini_test\\Frontend\\Frontend.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\mini_test\\Frontend\\Frontend.csproj",
+              "ToolTip": "C:\\project\\mini_test\\Frontend\\Frontend.csproj",
+              "RelativeToolTip": "..\\..\\..\\mini_test\\Frontend\\Frontend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-22T05:38:45.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Backend.csproj",
+              "DocumentMoniker": "C:\\project\\git\\employee-management\\Backend\\Backend\\Backend.csproj",
+              "RelativeDocumentMoniker": "Backend\\Backend.csproj",
+              "ToolTip": "C:\\project\\git\\employee-management\\Backend\\Backend\\Backend.csproj",
+              "RelativeToolTip": "Backend\\Backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-21T16:21:05.844Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

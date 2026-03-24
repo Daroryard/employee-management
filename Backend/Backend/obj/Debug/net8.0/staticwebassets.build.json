@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "uM0j0j8o3Ev3xn8gXmGY979lkk3UPe7DVHcxS3aMlrk=",
+  "Source": "Backend",
+  "BasePath": "_content/Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Backend\\wwwroot",
+      "Source": "Backend",
+      "ContentRoot": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\uploads\\9a8b8317-e786-45b3-a5c6-55af7a89718e.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/9a8b8317-e786-45b3-a5c6-55af7a89718e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a58t8iz5l9",
+      "Integrity": "gjGv7ijqZeOuwvm5neOJOi7yk8s8n1oNaY0bV7xojBI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\9a8b8317-e786-45b3-a5c6-55af7a89718e.jpg"
+    },
+    {
+      "Identity": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\uploads\\a3f3a969-57e1-41e8-904a-f3e9997def08.jpg",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "uploads/a3f3a969-57e1-41e8-904a-f3e9997def08#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9dt5fwxyme",
+      "Integrity": "E13D0N7FcankFkD0Xxsl0T6J4GJJk69LyrgTWOj6Fiw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\a3f3a969-57e1-41e8-904a-f3e9997def08.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/9a8b8317-e786-45b3-a5c6-55af7a89718e.a58t8iz5l9.jpg",
+      "AssetFile": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\uploads\\9a8b8317-e786-45b3-a5c6-55af7a89718e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gjGv7ijqZeOuwvm5neOJOi7yk8s8n1oNaY0bV7xojBI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 15:44:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a58t8iz5l9"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/9a8b8317-e786-45b3-a5c6-55af7a89718e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gjGv7ijqZeOuwvm5neOJOi7yk8s8n1oNaY0bV7xojBI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/9a8b8317-e786-45b3-a5c6-55af7a89718e.jpg",
+      "AssetFile": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\uploads\\9a8b8317-e786-45b3-a5c6-55af7a89718e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gjGv7ijqZeOuwvm5neOJOi7yk8s8n1oNaY0bV7xojBI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 15:44:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gjGv7ijqZeOuwvm5neOJOi7yk8s8n1oNaY0bV7xojBI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a3f3a969-57e1-41e8-904a-f3e9997def08.9dt5fwxyme.jpg",
+      "AssetFile": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\uploads\\a3f3a969-57e1-41e8-904a-f3e9997def08.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E13D0N7FcankFkD0Xxsl0T6J4GJJk69LyrgTWOj6Fiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 15:28:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9dt5fwxyme"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/a3f3a969-57e1-41e8-904a-f3e9997def08.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E13D0N7FcankFkD0Xxsl0T6J4GJJk69LyrgTWOj6Fiw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/a3f3a969-57e1-41e8-904a-f3e9997def08.jpg",
+      "AssetFile": "C:\\project\\git\\employee-management\\Backend\\Backend\\wwwroot\\uploads\\a3f3a969-57e1-41e8-904a-f3e9997def08.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E13D0N7FcankFkD0Xxsl0T6J4GJJk69LyrgTWOj6Fiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Mar 2026 15:28:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E13D0N7FcankFkD0Xxsl0T6J4GJJk69LyrgTWOj6Fiw="
+        }
+      ]
+    }
+  ]
+}

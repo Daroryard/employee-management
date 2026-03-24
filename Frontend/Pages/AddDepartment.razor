@@ -1,0 +1,66 @@
+﻿@page "/departments/add"
+@inject HttpClient Http
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+<div class="container-fluid mt-4" style="max-width: 600px;margin-left:0px !important;">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white"><h5><i class="fa-solid fa-plus me-2"></i> เพิ่มแผนกใหม่</h5></div>
+        <div class="card-body">
+            <EditForm Model="newDept" OnValidSubmit="HandleSubmit">
+                <DataAnnotationsValidator />
+                <div class="mb-3">
+                    <label class="form-label fw-bold">ชื่อแผนก</label>
+                    <InputText @bind-Value="newDept.Department_Name" class="form-control" placeholder="เช่น IT, HR, AC" />
+                    <ValidationMessage For="@(() => newDept.Department_Name)" class="text-danger" />
+                </div>
+                <hr />
+                <button type="submit" class="btn btn-primary">บันทึก</button>
+                <button type="button" class="btn btn-secondary" @onclick='() => Nav.NavigateTo("departments")'>ยกเลิก</button>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@code {
+    private Department newDept = new();
+    private async Task HandleSubmit()
+    {
+        var submitBtn = await JS.InvokeAsync<IJSObjectReference>("document.querySelector", "button[type='submit']");
+        await submitBtn.InvokeVoidAsync("setAttribute", "disabled", "disabled");
+        var res = await Http.PostAsJsonAsync("api/Departments", newDept);
+        if (res.IsSuccessStatusCode)
+        {
+            await JS.InvokeVoidAsync("showToast", "เพิ่มแผนกสำเร็จ!");
+
+            ClearForm();
+
+			await submitBtn.InvokeVoidAsync("removeAttribute", "disabled");
+
+        } else {
+
+                var errorMsg = await res.Content.ReadAsStringAsync();
+
+                if (string.IsNullOrEmpty(errorMsg))
+                {
+                    errorMsg = "เกิดข้อผิดพลาดในการแก้ไขข้อมูล";
+                }
+
+                await JS.InvokeVoidAsync("showToast", errorMsg, "error");
+
+			await submitBtn.InvokeVoidAsync("removeAttribute", "disabled");
+
+        }
+    }
+
+
+	private void ClearForm()
+    {
+		newDept = new Department
+		{
+				Department_Name = string.Empty
+		};
+    }
+
+  
+}

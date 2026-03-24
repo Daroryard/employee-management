@@ -1,0 +1,163 @@
+﻿@page "/employee/edit/{Id:int}"
+@inject HttpClient Http
+@inject NavigationManager Nav
+@inject IJSRuntime JS
+
+<div class="container-fluid mt-4">
+    <div class="card shadow" style="max-width: 1000px;">
+        <div class="card-header bg-warning text-dark">
+            <h4 class="mb-0"><i class="fa-solid fa-user-pen me-2"></i> แก้ไขข้อมูลพนักงาน</h4>
+        </div>
+        <div class="card-body">
+            @if (employee == null || departments == null)
+            {
+                <div class="text-center p-5"><div class="spinner-border text-primary"></div></div>
+            }
+            else
+            {
+              
+                <EditForm Model="@employee" OnValidSubmit="HandleUpdate">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary class="text-danger mb-3" />
+
+                    <div class="row g-3">
+                           <div class="col-md-6">
+                            <label class="form-label fw-bold">ชื่อ (First Name)</label>
+                            <InputText @bind-Value="employee.Employee_First_name" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">นามสกุล (Last Name)</label>
+                            <InputText @bind-Value="employee.Employee_Last_name" class="form-control" />
+                        </div>
+
+                           <div class="col-md-6">
+                            <label class="form-label fw-bold d-block">เพศ</label>
+                            <div class="mt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male"
+                                           checked="@(employee.Gender == "Male")" @onclick="@(() => employee.Gender = "Male")" />
+                                    <label class="form-check-label" for="male">ชาย</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female"
+                                           checked="@(employee.Gender == "Female")" @onclick="@(() => employee.Gender = "Female")" />
+                                    <label class="form-check-label" for="female">หญิง</label>
+                                </div>
+                            </div>
+                        </div>
+
+                           <div class="col-md-6">
+                            <label class="form-label fw-bold">แผนก</label>
+                            <InputSelect @bind-Value="employee.Department_ID" class="form-select">
+                                <option value="0">-- เลือกแผนก --</option>
+                                @if (departments != null)
+                                {
+                                    @foreach (var dept in departments)
+                                    {
+                                        <option value="@dept.Department_ID">@dept.Department_Name</option>
+                                    }
+                                }
+                            </InputSelect>
+                        </div>
+
+                           <div class="col-md-6">
+                            <label class="form-label fw-bold">วันเกิด</label>
+                            <InputDate @bind-Value="employee.Date_of_Birth" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-bold">วันที่เริ่มงาน</label>
+                            <InputDate @bind-Value="employee.Date_Joined" class="form-control" />
+                        </div>
+
+                           <div class="col-12">
+                            <label class="form-label fw-bold">ที่อยู่</label>
+                            <InputTextArea @bind-Value="employee.Employee_Address" class="form-control" rows="2" />
+                        </div>
+
+                           <div class="col-md-12">
+                            <label class="form-label fw-bold d-block">รูปถ่ายพนักงาน</label>
+
+                               <div class="mb-3">
+                                @if (!string.IsNullOrEmpty(imageDataUrl)) 
+                                {
+                                    <img src="@imageDataUrl" class="img-thumbnail" style="max-height: 200px;" alt="รูปใหม่" />
+                                }
+                                else if (!string.IsNullOrEmpty(employee.Photo)) 
+                                {
+                                    <img src="@(ImageBaseUrl + employee.Photo)" class="img-thumbnail" style="max-height: 200px;" alt="รูปเดิม" />
+                                }
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fa-solid fa-image"></i></span>
+                                <InputFile OnChange="OnInputFileChange" class="form-control" accept=".jpg,.jpeg,.png" />
+                            </div>
+                            <small class="text-muted">เลือกไฟล์ใหม่หากต้องการเปลี่ยนรูป (ปล่อยว่างไว้หากใช้รูปเดิม)</small>
+                            <p class="text-danger mt-1">@fileErrorMessage</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 border-top pt-3">
+                        <button type="submit" class="btn btn-success px-4 me-2">
+                            <i class="fa-solid fa-floppy-disk me-1"></i> บันทึกการแก้ไข
+                        </button>
+                        <button type="button" class="btn btn-secondary" @onclick="@(() => Nav.NavigateTo("employees/list"))">
+                            ยกเลิก
+                        </button>
+                    </div>
+                </EditForm>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    private Employee employee = new Employee(); 
+    private List<Department>? departments;
+
+    private string? imageDataUrl;
+    private string? fileErrorMessage;
+    private string ImageBaseUrl = "http://localhost:5250/uploads/"; 
+
+    protected override async Task OnInitializedAsync()
+    {
+        departments = await Http.GetFromJsonAsync<List<Department>>("api/Departments");
+        var result = await Http.GetFromJsonAsync<Employee>($"api/Employees/{Id}");
+        if (result != null) employee = result;
+    }
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file == null) return;
+
+        fileErrorMessage = "";
+        long maxFileSize = 1024 * 1024 * 2; 
+
+        if (file.Size > maxFileSize)
+        {
+            fileErrorMessage = "ไฟล์ใหญ่เกิน 2MB";
+            return;
+        }
+
+        var buffers = new byte[file.Size];
+        using var stream = file.OpenReadStream(maxFileSize);
+        await stream.ReadAsync(buffers);
+
+        imageDataUrl = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffers)}";
+        employee.Photo = imageDataUrl;
+    }
+
+    private async Task HandleUpdate()
+    {
+		var submitBtn = await JS.InvokeAsync<IJSObjectReference>("document.querySelector", "button[type='submit']");
+		await submitBtn.InvokeVoidAsync("setAttribute", "disabled", "disabled");
+        var response = await Http.PutAsJsonAsync($"api/Employees/{Id}", employee);
+        if (response.IsSuccessStatusCode)
+        {
+            await JS.InvokeVoidAsync("showToast", "อัปเดตข้อมูลสำเร็จ!");
+            Nav.NavigateTo("employees/list");
+        }
+    }
+}

@@ -1,0 +1,62 @@
+﻿@page "/departments"
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom text-start">
+    <div>
+        <h2 class="fw-bold">
+            <i class="fa-solid fa-sitemap me-2"></i> จัดการแผนก
+        </h2>
+        <p class="text-muted mb-0">กรุณาเลือกรายการที่ต้องการทำรายการ</p>
+    </div>
+</div>
+
+<div class="row g-4 mb-5 text-start">
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm action-card hover-elevate border-0" @onclick="NavigateToAdd" style="cursor: pointer;">
+            <div class="card-body text-center d-flex flex-column align-items-center justify-content-center py-5">
+                <div class="icon-box bg-success-subtle text-success rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                    <i class="fa-solid fa-folder-plus fa-3x"></i>
+                </div>
+                <h4 class="card-title fw-bold text-success">เพิ่มแผนกใหม่</h4>
+                <p class="card-text text-muted text-center px-3">
+                    สร้างชื่อแผนกใหม่
+                </p>
+                <button class="btn btn-success btn-lg rounded-pill px-4 mt-2 shadow-sm">
+                    <i class="fa-solid fa-plus me-2"></i>เริ่มเพิ่มข้อมูล
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm action-card hover-elevate border-0" @onclick="NavigateToUpdate" style="cursor: pointer;">
+            <div class="card-body text-center d-flex flex-column align-items-center justify-content-center py-5">
+                <div class="icon-box bg-primary-subtle text-primary rounded-circle mb-4 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                    <i class="fa-solid fa-list-check fa-3x"></i>
+                </div>
+                <h4 class="card-title fw-bold text-primary">ดู / แก้ไขรายชื่อแผนก</h4>
+                <p class="card-text text-muted text-center px-3">
+                    ตรวจสอบรายชื่อแผนกทั้งหมด
+                </p>
+                <button class="btn btn-primary btn-lg rounded-pill px-4 mt-2 shadow-sm">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>จัดการรายการ
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@code {
+    private void NavigateToAdd()
+    {
+        Nav.NavigateTo("departments/add");
+    }
+
+    private void NavigateToUpdate()
+    {
+        Nav.NavigateTo("departments/list");
+    }
+}

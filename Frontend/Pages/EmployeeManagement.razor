@@ -1,0 +1,62 @@
+﻿@page "/employees"
+@inject NavigationManager Nav
+
+<div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+    <div>
+        <h2 class="fw-bold">
+            <i class="fa-solid fa-users-gear me-2"></i> จัดการพนักงาน
+        </h2>
+        <p class="text-muted mb-0">กรุณาเลือกรายการที่ต้องการทำรายการ</p>
+    </div>
+</div>
+
+<div class="row g-4 mb-5">
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm action-card hover-elevate" @onclick="NavigateToAdd">
+            <div class="card-body text-center d-flex flex-column align-items-center justify-content-center py-5">
+                <div class="icon-box bg-success-subtle text-success rounded-circle mb-4">
+                    <i class="fa-solid fa-user-plus fa-3x"></i>
+                </div>
+                <h4 class="card-title fw-bold text-success">เพิ่มพนักงานใหม่</h4>
+                <p class="card-text text-muted text-center px-3">
+                    คลิกที่นี่เพื่อกรอกข้อมูลและบันทึกพนักงานใหม่เข้าสู่ระบบ
+                </p>
+                <button class="btn btn-success btn-lg rounded-pill px-4 mt-2">
+                    <i class="fa-solid fa-plus me-2"></i>เริ่มเพิ่มข้อมูล
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm action-card hover-elevate" @onclick="NavigateToUpdate">
+            <div class="card-body text-center d-flex flex-column align-items-center justify-content-center py-5">
+                <div class="icon-box bg-primary-subtle text-primary rounded-circle mb-4">
+                    <i class="fa-solid fa-folder-open fa-3x"></i>
+                </div>
+                <h4 class="card-title fw-bold text-primary">เปิดดู / แก้ไขข้อมูล</h4>
+                <p class="card-text text-muted text-center px-3">
+                    ค้นหาและดึงข้อมูลพนักงาน
+                </p>
+                <button class="btn btn-primary btn-lg rounded-pill px-4 mt-2">
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>ค้นหาและเปิด
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@code {
+    private void NavigateToAdd()
+    {
+        Nav.NavigateTo("employee/add");
+    }
+
+    private void NavigateToUpdate()
+    {
+        Nav.NavigateTo("employees/list"); 
+    }
+}
